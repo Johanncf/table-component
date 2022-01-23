@@ -1,24 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import Table from './Table';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Table 
+      title='Componente de tabela'
+      description='Tabela de produtos'
+      columns={['produto', 'id_do_produto', 'custo', 'comentario']}
+      data={[
+        {
+          produto: 'MacBook',
+          id_do_produto: '10',
+          custo: 5,
+          comentario: 'Algum comentario'
+        },
+        {
+          produto: 'MacBook',
+          id_do_produto: '10',
+          custo: 5,
+          comentario: 'Algum comentario'
+        },
+        {
+          produto: 'MacBook',
+          id_do_produto: '10',
+          custo: 5,
+          comentario: 'Algum comentario'
+        },
+        {
+          produto: 'MacBook',
+          id_do_produto: '10',
+          custo: 5,
+          comentario: 'Algum comentario'
+        },
+        {
+          produto: 'MacBook',
+          id_do_produto: '10',
+          custo: 5,
+          comentario: 'Algum comentario'
+        },
+        {
+          produto: 'MacBook',
+          id_do_produto: '10',
+          custo: 5,
+          comentario: 'Algum comentario'
+        },
+      ]}
+    />
   );
 }
 
